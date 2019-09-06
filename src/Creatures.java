@@ -10,9 +10,9 @@ public class Creatures {
         String school;
 
 
-        String mansion = keyboard.nextLine();
-        String mill = keyboard.nextLine();
-        String school = keyboard.nextLine();
+        mansion = keyboard.nextLine();
+        mill = keyboard.nextLine();
+        school = keyboard.nextLine();
         System.out.println("Welcome to Javatowne Village! A small community filled with friendly people but also strange creatures. " +
                 "One of these creatures has escaped the Oddities Museum but you decide to visit anyway.");
         System.out.println("You spot the Spikey Slimemonster and decide to run. " + "Do you to go to the 1.) JavaTowne Mall, 2. Ice Cream Shop, 3. 18th Century Mansion, 4. Saw Mill, or 5. Elementary School? Choose a number.");
@@ -20,16 +20,18 @@ public class Creatures {
 
         String bstalls = keyboard.nextLine();
         String bdefend = keyboard.nextLine();
-        String ehelp = null;
-        String ibdefend = null;
-        String exit = null;
-        String fd = null;
-        String icrhelp = null;
+        String ehelp;
+        String ibdefend;
+        String exit;
+        String fd;
+        String icrhelp;
+
+
 
         mall = keyboard.nextLine();
         if (mall.equals("1")) {
             System.out.println("Quick you have to choose between running to the mall food court to your (left) or the movie theater to your (right).");
-            String food = keyboard.nextLine();
+            String food = keyboard.nextLine();String fcstalls;
             if (food.equals("left")) {
                 System.out.println("Now you are in the food court. Your stomach growls but you need to run! Do you head for the back door (exit) or the (bathroom)?");
                 String fcbathroom = keyboard.nextLine();
@@ -39,9 +41,9 @@ public class Creatures {
                     System.out.println("You can choose to go to the (stalls) or (defend) yourself.");
 
 
-                }else if (fcstalls.equals("stalls")) {
+                }else if (fcbathroom.equals("stalls")) {
                     System.out.println("You run to the stalls and wait for help. You are eventually rescued. Hurray!");}
-//                } else if (fcbathroom.equals("defend")) {
+              else if (fcbathroom.equals("defend")) {
                     System.out.println("You try to defend yourself against the creature. You lose. You die a tragic death.");
                 }String fcexit = keyboard.nextLine();
 
@@ -103,22 +105,22 @@ public class Creatures {
 
         }
     }
-//            else if(choice1.equals("3"))
-//
-//    {
-//        System.out.println("You took your chances on the 18th Century Mansion. Hopefully the creature is too slow to catch you. Do you go (upstairs) or (downstairs) in the mansion?");
-//    }
-//            else if(choice1.equals("4"))
-//
-//    {
-//        System.out.println("The Saw Mill looks abandoned but full of tools. Where do you go inside, (the large saw) or under a pile of sawdust in the (back)");
-//    }
-//            else if(choice1.equals("5"))
-//
-//    {
-//        System.out.println("You aren't too cool for school. Where do you to inside, (principal's office) or (cafeteria)?");
-//    }
-//}
+            else if(choice1.equals("3"))
 
-//            }
-////}
+    {
+        System.out.println("You took your chances on the 18th Century Mansion. Hopefully the creature is too slow to catch you. Do you go (upstairs) or (downstairs) in the mansion?");
+    }
+            else if(choice1.equals("4"))
+
+    {
+        System.out.println("The Saw Mill looks abandoned but full of tools. Where do you go inside, (the large saw) or under a pile of sawdust in the (back)");
+    }
+            else if(choice1.equals("5"))
+
+    {
+        System.out.println("You aren't too cool for school. Where do you to inside, (principal's office) or (cafeteria)?");
+    }
+}
+
+            }
+}
